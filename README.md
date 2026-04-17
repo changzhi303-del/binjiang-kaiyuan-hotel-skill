@@ -33,7 +33,7 @@
 
 直接把这句话发给你的 AI 助手：
 
-> 帮我安装杭州滨江开元名都大酒店 Skill，仓库地址：https://github.com/YOUR_USERNAME/binjiang-kaiyuan-hotel-skill
+> 帮我安装杭州滨江开元名都大酒店 Skill，仓库地址：https://github.com/changzhi303-del/binjiang-kaiyuan-hotel-skill
 
 AI 助手会自动克隆仓库并安装到对应的 Skill 目录。
 
@@ -52,7 +52,7 @@ AI 助手会自动克隆仓库并安装到对应的 Skill 目录。
 
 ```bash
 # 示例：安装到 Claude Code
-git clone https://github.com/YOUR_USERNAME/binjiang-kaiyuan-hotel-skill.git \
+git clone https://github.com/changzhi303-del/binjiang-kaiyuan-hotel-skill.git \
   ~/.claude/skills/binjiang-kaiyuan-hotel-skill
 ```
 
