@@ -1,0 +1,77 @@
+{
+  "hotelName": "杭州滨江开元名都大酒店",
+  "socialMedia": {
+    "wechat": {
+      "name": "微信公众号",
+      "account": "杭州滨江开元名都大酒店",
+      "qrCode": "assets/images/qr/wechat-official.png",
+      "link": "",
+      "description": "关注公众号获取最新优惠活动和酒店资讯",
+      "type": "qr_only"
+    },
+    "xiaohongshu": {
+      "name": "小红书",
+      "account": "杭州滨江开元名都宴会中心",
+      "link": "https://xhslink.com/m/9NzuYBb5NmM",
+      "description": "分享酒店美图和入住体验"
+    },
+    "douyin": {
+      "name": "抖音",
+      "account": "杭州滨江开元名都大酒店",
+      "link": "https://v.douyin.com/8pj_0xeuZII/",
+      "description": "短视频展示酒店精彩瞬间"
+    },
+    "weibo": {
+      "name": "微博",
+      "account": "杭州滨江开元名都大酒店",
+      "link": "",
+      "description": "实时互动和最新动态"
+    },
+    "videoChannel": {
+      "name": "视频号",
+      "account": "杭州滨江开元名都大酒店",
+      "qrCode": "assets/images/qr/wechat-video.jpg",
+      "link": "",
+      "description": "微信视频号官方账号",
+      "type": "qr_only"
+    }
+  },
+  "contact": {
+    "phone": "0571-56971666",
+    "email": "",
+    "address": "浙江省杭州市滨江区火炬大道岩大房巷59号"
+  },
+  "qrCodes": {
+    "folder": "assets/images/qr/",
+    "files": [
+      {
+        "name": "微信公众号",
+        "filename": "wechat-official.png",
+        "path": "assets/images/qr/wechat-official.png",
+        "description": "微信公众号二维码，用户扫码关注"
+      },
+      {
+        "name": "视频号",
+        "filename": "wechat-video.jpg",
+        "path": "assets/images/qr/wechat-video.jpg",
+        "description": "微信视频号二维码，用户扫码关注"
+      },
+      {
+        "name": "婚礼顾问",
+        "filename": "wedding-consultant.jpg",
+        "path": "assets/images/qr/wedding-consultant.jpg",
+        "description": "婚礼顾问微信二维码，用户扫码添加"
+      }
+    ],
+    "instructions": [
+      "二维码图片已上传到 assets/images/qr/ 目录",
+      "命名规范：wechat-official.png（公众号）、wechat-video.jpg（视频号）、wedding-consultant.jpg（婚礼顾问）",
+      "支持格式：PNG、JPG",
+      "二维码需清晰可识别"
+    ]
+  },
+  "notes": {
+    "placeholder": "请填写实际的社交媒体账号链接",
+    "instructions": "运营团队需要补充真实的账号信息和二维码图片，微信公众号和视频号只有二维码没有链接"
+  }
+}

@@ -1,0 +1,333 @@
+{
+  "systemName": "杭州滨江开元名都大酒店客户反馈系统",
+  "version": "1.0",
+  "feedbackTypes": [
+    {
+      "id": "general",
+      "name": "一般咨询",
+      "description": "酒店服务、设施、政策等一般性问题",
+      "priority": "normal",
+      "responseTime": "24小时内"
+    },
+    {
+      "id": "booking",
+      "name": "预订咨询",
+      "description": "客房预订、会议场地、婚宴预订等",
+      "priority": "high",
+      "responseTime": "2小时内"
+    },
+    {
+      "id": "complaint",
+      "name": "投诉建议",
+      "description": "服务投诉、改进建议、问题反馈",
+      "priority": "urgent",
+      "responseTime": "1小时内"
+    },
+    {
+      "id": "cooperation",
+      "name": "商务合作",
+      "description": "商务合作、团购、协议价、异业合作",
+      "priority": "normal",
+      "responseTime": "24小时内"
+    },
+    {
+      "id": "recruitment",
+      "name": "人才招聘",
+      "description": "招聘信息、简历投递、实习申请",
+      "priority": "normal",
+      "responseTime": "3个工作日内"
+    },
+    {
+      "id": "lost-found",
+      "name": "失物招领",
+      "description": "遗失物品查询、招领登记",
+      "priority": "high",
+      "responseTime": "2小时内"
+    },
+    {
+      "id": "vip",
+      "name": "VIP专属",
+      "description": "VIP客户专属服务通道",
+      "priority": "urgent",
+      "responseTime": "30分钟内"
+    }
+  ],
+  "formConfig": {
+    "fields": [
+      {
+        "name": "feedbackType",
+        "label": "咨询类型",
+        "type": "select",
+        "required": true,
+        "placeholder": "请选择咨询类型",
+        "options": [
+          { "value": "general", "label": "一般咨询" },
+          { "value": "booking", "label": "预订咨询" },
+          { "value": "complaint", "label": "投诉建议" },
+          { "value": "cooperation", "label": "商务合作" },
+          { "value": "recruitment", "label": "人才招聘" },
+          { "value": "lost-found", "label": "失物招领" },
+          { "value": "vip", "label": "VIP专属" }
+        ]
+      },
+      {
+        "name": "name",
+        "label": "您的姓名",
+        "type": "text",
+        "required": true,
+        "placeholder": "请输入您的姓名",
+        "validation": "至少2个字符"
+      },
+      {
+        "name": "phone",
+        "label": "联系电话",
+        "type": "tel",
+        "required": true,
+        "placeholder": "请输入手机号码",
+        "validation": "请输入有效的11位手机号码"
+      },
+      {
+        "name": "email",
+        "label": "电子邮箱",
+        "type": "email",
+        "required": false,
+        "placeholder": "请输入邮箱（选填）"
+      },
+      {
+        "name": "wechat",
+        "label": "微信号",
+        "type": "text",
+        "required": false,
+        "placeholder": "请输入微信号（选填）"
+      },
+      {
+        "name": "subject",
+        "label": "咨询主题",
+        "type": "text",
+        "required": true,
+        "placeholder": "请简要描述您的需求",
+        "maxLength": 50
+      },
+      {
+        "name": "content",
+        "label": "详细内容",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "请详细描述您的需求、问题或建议...",
+        "maxLength": 1000,
+        "rows": 6
+      },
+      {
+        "name": "preferredContact",
+        "label": "偏好联系方式",
+        "type": "select",
+        "required": false,
+        "placeholder": "请选择联系方式",
+        "options": [
+          { "value": "phone", "label": "电话" },
+          { "value": "wechat", "label": "微信" },
+          { "value": "email", "label": "邮件" }
+        ],
+        "default": "phone"
+      },
+      {
+        "name": "expectedTime",
+        "label": "期望回复时间",
+        "type": "select",
+        "required": false,
+        "placeholder": "请选择期望回复时间",
+        "options": [
+          { "value": "asap", "label": "尽快" },
+          { "value": "today", "label": "今天内" },
+          { "value": "tomorrow", "label": "明天" },
+          { "value": "week", "label": "一周内" }
+        ]
+      },
+      {
+        "name": "attachments",
+        "label": "附件上传",
+        "type": "file",
+        "required": false,
+        "accept": "image/*,.pdf,.doc,.docx",
+        "maxSize": "5MB",
+        "maxCount": 3,
+        "description": "支持图片、PDF、Word文档，最多3个文件"
+      }
+    ],
+    "submitButton": {
+      "text": "提交反馈",
+      "loadingText": "提交中...",
+      "successText": "提交成功"
+    }
+  },
+  "successMessage": {
+    "title": "提交成功！",
+    "content": "感谢您联系杭州滨江开元名都大酒店，我们已收到您的反馈，将尽快安排专人与您联系。",
+    "ticketNumber": "您的反馈编号：{ticketId}",
+    "actions": [
+      { "type": "button", "text": "查看反馈状态", "action": "viewStatus" },
+      { "type": "button", "text": "返回首页", "action": "goHome" }
+    ]
+  },
+  "contactChannels": {
+    "phone": {
+      "name": "电话热线",
+      "number": "0571-56971666",
+      "hours": "24小时",
+      "icon": "phone",
+      "description": "全天候服务热线"
+    },
+    "wechat": {
+      "name": "微信客服",
+      "account": "开元酒店服务号",
+      "qrCode": "assets/images/qr/customer-service.png",
+      "hours": "9:00-21:00",
+      "icon": "message-circle",
+      "description": "扫码添加微信客服"
+    },
+    "online": {
+      "name": "在线客服",
+      "hours": "9:00-21:00",
+      "icon": "headphones",
+      "description": "网页在线即时沟通"
+    }
+  },
+  "departments": [
+    {
+      "name": "前台接待",
+      "phone": "0571-56971666",
+      "extension": "前台",
+      "hours": "24小时",
+      "responsibilities": ["入住退房", "咨询解答", "行李服务"]
+    },
+    {
+      "name": "客房预订",
+      "phone": "0571-56971666",
+      "extension": "预订部",
+      "hours": "8:00-22:00",
+      "responsibilities": ["客房预订", "价格咨询", "会员服务"]
+    },
+    {
+      "name": "宴会销售",
+      "phone": "0571-56971666",
+      "extension": "宴会部",
+      "hours": "9:00-21:00",
+      "responsibilities": ["婚宴预订", "会议场地", "宴会服务"]
+    },
+    {
+      "name": "餐饮服务",
+      "phone": "0571-56971666",
+      "extension": "餐饮部",
+      "hours": "10:00-21:00",
+      "responsibilities": ["餐厅预订", "菜单咨询", "宴会餐饮"]
+    },
+    {
+      "name": "市场营销",
+      "phone": "0571-56971666",
+      "extension": "市场部",
+      "hours": "9:00-18:00",
+      "responsibilities": ["商务合作", "团购业务", "媒体联络"]
+    },
+    {
+      "name": "人力资源",
+      "phone": "0571-56971666",
+      "extension": "人事部",
+      "hours": "9:00-17:30",
+      "responsibilities": ["招聘咨询", "简历投递", "实习申请"]
+    }
+  ],
+  "dataStorage": {
+    "method": "supabase",
+    "tableName": "customer_feedback",
+    "fields": [
+      "id",
+      "ticket_id",
+      "feedback_type",
+      "name",
+      "phone",
+      "email",
+      "wechat",
+      "subject",
+      "content",
+      "preferred_contact",
+      "expected_time",
+      "attachments",
+      "status",
+      "priority",
+      "assigned_to",
+      "response_content",
+      "response_time",
+      "created_at",
+      "updated_at"
+    ],
+    "status": "已创建",
+    "rlsPolicy": "允许匿名用户提交和查询"
+  },
+  "supabaseConfig": {
+    "endpoint": "https://coplhkyergcwuonyfjyd.supabase.co/functions/v1/customer-feedback",
+    "table": "customer_feedback",
+    "method": "POST",
+    "functionName": "customer-feedback",
+    "headers": {
+      "Content-Type": "application/json",
+      "Prefer": "return=representation"
+    },
+    "dataMapping": {
+      "ticket_id": "自动生成TK-前缀+时间戳+随机数",
+      "feedback_type": "用户选择的反馈类型",
+      "name": "用户输入的姓名",
+      "phone": "用户输入的联系电话",
+      "email": "用户输入的邮箱",
+      "wechat": "用户输入的微信号",
+      "subject": "用户输入的咨询主题",
+      "content": "用户输入的详细内容",
+      "preferred_contact": "用户选择的偏好联系方式",
+      "expected_time": "用户选择的期望回复时间",
+      "status": "submitted",
+      "priority": "根据feedback_type自动映射"
+    },
+    "priorityMapping": {
+      "general": "normal",
+      "booking": "high",
+      "complaint": "urgent",
+      "cooperation": "normal",
+      "recruitment": "normal",
+      "lost-found": "high",
+      "vip": "urgent"
+    }
+  },
+  "notifications": {
+    "sms": {
+      "enabled": true,
+      "customerTemplate": "【杭州滨江开元名都大酒店】尊敬的{name}，您的反馈已收到，反馈编号：{ticketId}。我们将尽快安排专人与您联系，感谢您的支持！",
+      "staffTemplate": "【酒店提醒】收到新的客户反馈，类型：{type}，主题：{subject}，请尽快处理。"
+    },
+    "wechat": {
+      "enabled": true,
+      "template": ""
+    },
+    "email": {
+      "enabled": true,
+      "customerSubject": "【杭州滨江开元名都大酒店】反馈确认",
+      "customerTemplate": ""
+    }
+  },
+  "workflow": {
+    "steps": [
+      { "step": 1, "name": "提交反馈", "status": "submitted", "description": "客户提交反馈表单" },
+      { "step": 2, "name": "自动分配", "status": "assigned", "description": "系统根据类型自动分配给相关部门" },
+      { "step": 3, "name": "处理中", "status": "processing", "description": "工作人员处理反馈" },
+      { "step": 4, "name": "回复客户", "status": "responded", "description": "联系客户并回复处理结果" },
+      { "step": 5, "name": "完成", "status": "completed", "description": "反馈处理完成" }
+    ]
+  },
+  "notes": {
+    "instructions": [
+      "反馈类型支持智能分类，可根据关键词自动识别",
+      "VIP客户反馈将优先处理并标记为高优先级",
+      "投诉类反馈需在1小时内响应",
+      "支持附件上传，方便客户提供图片或文档",
+      "每个反馈将生成唯一编号，方便客户查询进度"
+    ]
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "eventName": "杭州滨江开元名都大酒店婚礼秀",
+  "eventType": "wedding-show",
+  "status": "active",
+  "currentSeason": {
+    "name": "2026春季婚礼秀",
+    "theme": "春日赴约",
+    "date": "2026年4月25日",
+    "time": "14:00-20:00",
+    "location": "酒店空中草坪、名都厅",
+    "status": "报名中",
+    "schedule": [
+      {
+        "time": "14:00-15:30",
+        "title": "现场签到",
+        "description": "新人签到入场，领取伴手礼"
+      },
+      {
+        "time": "15:30-16:30",
+        "title": "活动开幕",
+        "description": "婚礼秀正式开幕，酒店介绍，婚礼趋势分享"
+      },
+      {
+        "time": "16:30-17:00",
+        "title": "现场互动",
+        "description": "互动游戏，抽奖环节，婚礼知识问答"
+      },
+      {
+        "time": "17:00-20:00",
+        "title": "空中草坪婚礼秀自助晚宴",
+        "description": "婚纱走秀，婚礼场景展示，自助晚宴，现场咨询"
+      }
+    ]
+  },
+  "eventInfo": {
+    "description": "杭州滨江开元名都大酒店婚礼秀，为准新人们呈现一站式婚礼服务体验",
+    "highlights": [
+      "现场婚纱走秀",
+      "婚礼场地实景参观",
+      "婚宴菜品品鉴",
+      "婚礼策划方案讲解",
+      "专属优惠现场发布",
+      "签到精美礼品"
+    ],
+    "benefits": [
+      "现场签约享专属折扣",
+      "赠送婚礼策划服务",
+      "免费升级婚宴套餐",
+      "赠送婚房一晚"
+    ]
+  },
+  "registration": {
+    "formFields": [
+      {
+        "name": "coupleName",
+        "label": "新人姓名",
+        "type": "text",
+        "required": true,
+        "placeholder": "请输入新郎新娘姓名",
+        "validation": "至少输入2个字符"
+      },
+      {
+        "name": "phone",
+        "label": "联系电话",
+        "type": "tel",
+        "required": true,
+        "placeholder": "请输入手机号码",
+        "validation": "请输入有效的11位手机号码"
+      },
+      {
+        "name": "wechat",
+        "label": "微信号",
+        "type": "text",
+        "required": false,
+        "placeholder": "请输入微信号（选填）"
+      },
+      {
+        "name": "weddingDate",
+        "label": "预计婚期",
+        "type": "date",
+        "required": false,
+        "placeholder": "请选择预计婚期"
+      },
+      {
+        "name": "guestCount",
+        "label": "预计桌数",
+        "type": "select",
+        "required": false,
+        "options": [
+          { "value": "10-20", "label": "10-20桌" },
+          { "value": "20-30", "label": "20-30桌" },
+          { "value": "30-50", "label": "30-50桌" },
+          { "value": "50+", "label": "50桌以上" }
+        ]
+      },
+      {
+        "name": "budget",
+        "label": "预算范围",
+        "type": "select",
+        "required": false,
+        "options": [
+          { "value": "6000-8000", "label": "6000-8000元/桌" },
+          { "value": "8000-10000", "label": "8000-10000元/桌" },
+          { "value": "10000+", "label": "10000元以上/桌" }
+        ]
+      },
+      {
+        "name": "remarks",
+        "label": "备注",
+        "type": "textarea",
+        "required": false,
+        "placeholder": "请输入其他需求或问题（选填）",
+        "maxLength": 200
+      }
+    ],
+    "submitButton": {
+      "text": "立即报名",
+      "loadingText": "提交中...",
+      "successText": "报名成功"
+    },
+    "successMessage": {
+      "title": "报名成功！",
+      "content": "感谢您报名参加杭州滨江开元名都大酒店婚礼秀，我们的婚礼顾问将在24小时内与您联系，请保持电话畅通。",
+      "actions": [
+        { "type": "button", "text": "查看活动详情", "action": "viewDetails" },
+        { "type": "button", "text": "返回首页", "action": "goHome" }
+      ]
+    }
+  },
+  "contact": {
+    "weddingConsultant": {
+      "name": "婚礼顾问",
+      "phone": "13857180469",
+      "extension": "婚宴部",
+      "workHours": "周一至周日 9:00-21:00"
+    },
+    "wechat": {
+      "qrCode": "assets/images/wedding-consultant-qr.jpg",
+      "account": "滨江开元名都傅佳锴",
+      "location": "浙江 杭州"
+    }
+  },
+  "dataStorage": {
+    "method": "supabase",
+    "tableName": "wedding_show_registrations",
+    "status": "已创建",
+    "fields": [
+      "id",
+      "couple_name",
+      "phone",
+      "wechat",
+      "wedding_date",
+      "guest_count",
+      "budget",
+      "remarks",
+      "event_name",
+      "registration_time",
+      "status",
+      "reminder_1day_sent",
+      "reminder_2hours_sent",
+      "created_at",
+      "updated_at"
+    ],
+    "rlsPolicy": "允许匿名用户报名和查询",
+    "indexes": ["phone", "event_name", "status"]
+  },
+  "supabaseConfig": {
+    "endpoint": "https://coplhkyergcwuonyfjyd.supabase.co/functions/v1/wedding-registration",
+    "table": "wedding_show_registrations",
+    "method": "POST",
+    "functionName": "wedding-registration",
+    "headers": {
+      "Content-Type": "application/json",
+      "Prefer": "return=representation"
+    },
+    "dataMapping": {
+      "couple_name": "用户输入的新人姓名",
+      "phone": "用户输入的联系电话",
+      "wechat": "用户输入的微信号",
+      "wedding_date": "用户输入的预计婚期",
+      "guest_count": "用户输入的预计桌数",
+      "budget": "用户输入的预算范围",
+      "remarks": "用户输入的备注",
+      "event_name": "春日赴约婚礼秀",
+      "status": "registered"
+    }
+  },
+  "notifications": {
+    "sms": {
+      "enabled": true,
+      "template": "【杭州滨江开元名都大酒店】尊敬的{coupleName}，您已成功报名{eventName}「春日赴约」，活动时间：2026年4月25日 14:00-20:00，地点：酒店空中草坪、名都厅。活动流程：14:00签到→15:30开幕→16:30互动→17:00空中草坪婚礼秀自助晚宴。我们的婚礼顾问将尽快与您联系，请保持电话畅通。"
+    },
+    "wechat": {
+      "enabled": true,
+      "template": "尊敬的{coupleName}，感谢您报名参加「春日赴约」婚礼秀！🌸\n\n📅 时间：2026年4月25日（周六）14:00-20:00\n📍 地点：杭州滨江开元名都大酒店 空中草坪、名都厅\n\n活动流程：\n🕐 14:00-15:30 现场签到\n🕑 15:30-16:30 活动开幕\n🕒 16:30-17:00 现场互动\n🕓 17:00-20:00 空中草坪婚礼秀自助晚宴\n\n我们的婚礼顾问将在24小时内与您联系，期待与您相见！"
+    },
+    "email": {
+      "enabled": false,
+      "template": "",
+      "subject": "【杭州滨江开元名都大酒店】婚礼秀报名确认"
+    },
+    "reminder": {
+      "enabled": true,
+      "channels": ["sms", "wechat"],
+      "schedule": [
+        {
+          "type": "1day",
+          "before": "24小时",
+          "content": "明天就是「春日赴约」婚礼秀啦！时间：14:00-20:00，地点：酒店空中草坪、名都厅。请准时参加，期待与您相见！"
+        },
+        {
+          "type": "2hours",
+          "before": "2小时",
+          "content": "「春日赴约」婚礼秀即将开始！14:00开始签到，请携带身份证前往酒店空中草坪、名都厅。期待您的到来！"
+        }
+      ]
+    }
+  },
+  "historyEvents": [
+    {
+      "name": "2024冬季婚礼秀",
+      "date": "2024年12月",
+      "theme": "冬日恋歌",
+      "participants": 128,
+      "status": "已结束"
+    },
+    {
+      "name": "2024秋季婚礼秀",
+      "date": "2024年9月",
+      "theme": "金秋浪漫",
+      "participants": 156,
+      "status": "已结束"
+    }
+  ],
+  "notes": {
+    "placeholder": "请填写实际的婚礼秀活动信息",
+    "instructions": [
+      "更新currentSeason为当前活动信息",
+      "补充微信二维码图片路径",
+      "配置短信通知模板",
+      "如需数据存储，请配置Supabase数据库"
+    ]
+  }
+}

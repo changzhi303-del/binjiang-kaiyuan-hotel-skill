@@ -1,0 +1,84 @@
+{
+  "hotelName": "杭州滨江开元名都大酒店",
+  "platforms": {
+    "ctrip": {
+      "name": "携程",
+      "type": "客房预订",
+      "link": "https://hotels.ctrip.com/hotels/100476367.html",
+      "icon": "ctrip",
+      "description": "官方合作平台，客房预订首选",
+      "features": [
+        "实时房态查询",
+        "会员专享价",
+        "免费取消",
+        "积分累积"
+      ]
+    },
+    "meituan": {
+      "name": "美团",
+      "type": "餐饮预订",
+      "link": "http://dpurl.cn/qp5t6M8z",
+      "icon": "meituan",
+      "description": "汇锦轩中餐厅官方窗口",
+      "features": [
+        "在线订座",
+        "团购优惠",
+        "外卖服务",
+        "套餐预订"
+      ]
+    },
+    "fliggy": {
+      "name": "飞猪",
+      "type": "客房预订",
+      "link": "",
+      "icon": "fliggy",
+      "description": "阿里巴巴旗下旅行平台",
+      "features": [
+        "会员权益",
+        "信用住",
+        "套餐优惠"
+      ]
+    },
+    "qunar": {
+      "name": "去哪儿",
+      "type": "客房预订",
+      "link": "",
+      "icon": "qunar",
+      "description": "比价预订，优惠多多",
+      "features": [
+        "价格对比",
+        "优惠券",
+        "会员折扣"
+      ]
+    },
+    "dianping": {
+      "name": "大众点评",
+      "type": "餐饮评价",
+      "link": "",
+      "icon": "dianping",
+      "description": "查看餐厅评价和推荐菜品",
+      "features": [
+        "真实评价",
+        "推荐菜品",
+        "优惠活动"
+      ]
+    }
+  },
+  "bookingStrategy": {
+    "rooms": {
+      "primary": "ctrip",
+      "secondary": ["fliggy", "qunar"],
+      "recommendation": "建议优先使用携程预订客房，享受官方合作优惠和会员权益"
+    },
+    "dining": {
+      "primary": "meituan",
+      "secondary": ["dianping"],
+      "recommendation": "中餐厅预订和外卖请使用美团，查看评价请使用大众点评"
+    }
+  },
+  "notes": {
+    "placeholder": "请填写实际的第三方平台链接",
+    "instructions": "运营团队需要补充真实的平台店铺链接",
+    "apiIntegration": "如需API对接，请联系各平台开放平台申请"
+  }
+}

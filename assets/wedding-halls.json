@@ -1,0 +1,481 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-04-17",
+  "description": "杭州滨江开元名都大酒店婚宴厅配置 - 四大主题婚宴场地",
+  "halls": [
+    {
+      "id": "kaiyuan",
+      "name": "开元厅",
+      "slogan": "大场地随意DIY",
+      "type": "indoor",
+      "floor": "1F",
+      "area": 1000,
+      "ceilingHeight": 7.5,
+      "maxTables": 50,
+      "minTables": 30,
+      "bestFor": ["大型婚礼", "创意婚礼", "主题婚礼"],
+      "features": [
+        "层高7.5米无柱设计",
+        "1000平方米超大空间",
+        "最多可容纳50桌",
+        "无限制创意婚礼",
+        "500平序厅大空间支持DIY婚礼",
+        "可做迎宾区甜品台"
+      ],
+      "facilities": [
+        "LED大屏显示系统",
+        "专业舞台",
+        "无线麦克风",
+        "专业级音响设备",
+        "智能灯光系统",
+        "WiFi全覆盖"
+      ],
+      "diyFeatures": {
+        "description": "完全开放的创意空间",
+        "supported": [
+          "自定义舞台布置",
+          "个性化灯光设计",
+          "主题装饰自由发挥",
+          "序厅DIY迎宾区",
+          "甜品台自由布置"
+        ]
+      },
+      "pricing": {
+        "venueFee": {
+          "unit": "请联系顾问",
+          "notes": "根据季节和档期浮动"
+        },
+        "packages": [
+          {
+            "name": "锦绣良缘宴",
+            "price": 6999,
+            "unit": "桌",
+            "minTables": 30
+          },
+          {
+            "name": "龙凤呈祥宴",
+            "price": 7999,
+            "unit": "桌",
+            "minTables": 30
+          },
+          {
+            "name": "百年好合宴",
+            "price": 8999,
+            "unit": "桌",
+            "minTables": 30
+          },
+          {
+            "name": "天长地久宴",
+            "price": 9999,
+            "unit": "桌",
+            "minTables": 30
+          }
+        ]
+      },
+      "images": {
+        "main": "",
+        "gallery": []
+      },
+      "recommendationScore": 95,
+      "priority": 2
+    },
+    {
+      "id": "mingdu",
+      "name": "名都厅",
+      "slogan": "一站式·自带百万布置·限时免场地费",
+      "type": "indoor",
+      "floor": "3F",
+      "area": 1000,
+      "ceilingHeight": 7.5,
+      "maxTables": 50,
+      "minTables": 30,
+      "bestFor": ["一站式婚礼", "韩式婚礼", "高端婚礼"],
+      "isFeatured": true,
+      "features": [
+        "层高7.5米无柱设计",
+        "1000平方米超大空间",
+        "最高可容纳50桌",
+        "百万婚礼布置",
+        "全厅水晶吊顶",
+        "开合式双屏支持独特入场",
+        "旋转可升降主舞台",
+        "支持创意婚礼仪式",
+        "雪花机激光灯打造韩式唯美氛围",
+        "摘星为戒创意环节",
+        "开场沉浸式灯光秀",
+        "500平序厅大空间支持DIY迎宾区甜品台",
+        "赠送甜品台"
+      ],
+      "facilities": [
+        "百万级水晶吊顶",
+        "开合式LED双屏",
+        "旋转升降舞台",
+        "雪花机特效",
+        "激光灯系统",
+        "沉浸式灯光秀设备",
+        "专业音响系统",
+        "无线麦克风",
+        "智能灯光控制",
+        "WiFi全覆盖"
+      ],
+      "specialEffects": {
+        "lighting": ["沉浸式灯光秀", "激光灯", "智能灯光系统"],
+        "stage": ["旋转升降舞台", "开合式双屏", "雪花机"],
+        "ceremony": ["摘星为戒", "创意入场", "韩式唯美氛围"]
+      },
+      "includedServices": [
+        "百万婚礼布置",
+        "全厅水晶吊顶",
+        "专业灯光音响",
+        "序厅迎宾区布置",
+        "甜品台（赠送）",
+        "婚礼管家服务"
+      ],
+      "pricing": {
+        "venueFee": {
+          "original": 20000,
+          "promotion": 0,
+          "unit": "限时免场地费",
+          "notes": "限时优惠活动，具体以实际咨询为准"
+        },
+        "packages": [
+          {
+            "name": "锦绣良缘宴",
+            "price": 6999,
+            "unit": "桌",
+            "minTables": 30
+          },
+          {
+            "name": "龙凤呈祥宴",
+            "price": 7999,
+            "unit": "桌",
+            "minTables": 30
+          },
+          {
+            "name": "百年好合宴",
+            "price": 8999,
+            "unit": "桌",
+            "minTables": 30
+          },
+          {
+            "name": "天长地久宴",
+            "price": 9999,
+            "unit": "桌",
+            "minTables": 30
+          }
+        ]
+      },
+      "images": {
+        "main": "",
+        "gallery": []
+      },
+      "recommendationScore": 100,
+      "priority": 1
+    },
+    {
+      "id": "jinxiu",
+      "name": "锦绣厅",
+      "slogan": "小预算自带布置·免场地费",
+      "type": "indoor",
+      "floor": "5F",
+      "area": 200,
+      "ceilingHeight": 3.5,
+      "maxTables": 15,
+      "minTables": 8,
+      "bestFor": ["小预算婚礼", "订婚宴", "答谢宴", "小型聚会"],
+      "features": [
+        "小预算一站式（自带婚礼布置）",
+        "温柔奶油布幔风格",
+        "自带大屏",
+        "灯光舞美设备",
+        "免场地费",
+        "15桌容量",
+        "订婚和答谢宴最优选"
+      ],
+      "facilities": [
+        "LED大屏",
+        "灯光舞美设备",
+        "音响系统",
+        "奶油布幔装饰",
+        "WiFi覆盖"
+      ],
+      "style": {
+        "theme": "温柔奶油布幔",
+        "description": "温馨浪漫的小预算婚礼首选",
+        "colors": ["奶油白", "香槟金", "淡粉色"]
+      },
+      "pricing": {
+        "venueFee": {
+          "original": 0,
+          "promotion": 0,
+          "unit": "免场地费",
+          "notes": "自带布置，免场地费"
+        },
+        "packages": [
+          {
+            "name": "锦绣良缘宴",
+            "price": 6999,
+            "unit": "桌",
+            "minTables": 8
+          },
+          {
+            "name": "龙凤呈祥宴",
+            "price": 7999,
+            "unit": "桌",
+            "minTables": 8
+          }
+        ]
+      },
+      "images": {
+        "main": "",
+        "gallery": []
+      },
+      "recommendationScore": 90,
+      "priority": 3
+    },
+    {
+      "id": "sky-garden",
+      "name": "空中花园",
+      "slogan": "户外·真草坪",
+      "type": "outdoor",
+      "floor": "顶层",
+      "area": 1500,
+      "maxGuests": 300,
+      "minTables": 20,
+      "bestFor": ["户外婚礼", "草坪婚礼", "派对婚礼", "晚宴婚礼"],
+      "features": [
+        "1500平大空间",
+        "可容纳数百人",
+        "水上玻璃舞台",
+        "真草草坪",
+        "独享休息区",
+        "整层户外空间独享",
+        "夜晚派对灯光舞美",
+        "支持户外位上用餐"
+      ],
+      "facilities": [
+        "水上玻璃舞台",
+        "真草草坪",
+        "独享休息区",
+        "户外灯光系统",
+        "音响设备",
+        "户外用餐设施",
+        "遮阳/遮雨设施（可选）"
+      ],
+      "outdoorFeatures": {
+        "grass": "真草草坪",
+        "stage": "水上玻璃舞台",
+        "privacy": "整层独享空间",
+        "lighting": "夜晚派对灯光",
+        "dining": "支持户外位上用餐"
+      },
+      "pricing": {
+        "venueFee": {
+          "original": 16000,
+          "unit": "场",
+          "notes": "根据季节和天气情况调整"
+        },
+        "packages": [
+          {
+            "name": "户外草坪套餐",
+            "price": null,
+            "unit": "桌",
+            "minTables": 20
+          },
+          {
+            "name": "户外晚宴套餐",
+            "price": null,
+            "unit": "桌",
+            "minTables": 20
+          }
+        ]
+      },
+      "weatherPolicy": {
+        "backup": "提供室内场地备选方案",
+        "tent": "可选帐篷设施",
+        "notice": "建议提前关注天气预报"
+      },
+      "images": {
+        "main": "",
+        "gallery": []
+      },
+      "recommendationScore": 88,
+      "priority": 4
+    }
+  ],
+  "matchingRules": {
+    "description": "智能匹配规则 - 根据婚期和桌数推荐合适的婚宴厅",
+    "tableRanges": [
+      {
+        "range": "5-15桌",
+        "recommendedHalls": ["jinxiu", "sky-garden"],
+        "suggestion": "适合小型温馨婚礼、订婚宴、答谢宴"
+      },
+      {
+        "range": "16-30桌",
+        "recommendedHalls": ["mingdu", "kaiyuan", "sky-garden"],
+        "suggestion": "适合中型婚礼，名都厅一站式省心"
+      },
+      {
+        "range": "31-50桌",
+        "recommendedHalls": ["mingdu", "kaiyuan"],
+        "suggestion": "适合大型婚礼，两个千平大厅任选"
+      }
+    ],
+    "seasonFactors": {
+      "spring": {
+        "months": [3, 4, 5],
+        "recommendation": "春季婚礼旺季，建议提前6个月预订",
+        "outdoorSuitable": true
+      },
+      "summer": {
+        "months": [6, 7, 8],
+        "recommendation": "夏季建议选择室内场地或傍晚户外",
+        "outdoorSuitable": false
+      },
+      "autumn": {
+        "months": [9, 10, 11],
+        "recommendation": "秋季婚礼黄金期，户外室内皆宜",
+        "outdoorSuitable": true
+      },
+      "winter": {
+        "months": [12, 1, 2],
+        "recommendation": "冬季建议选择室内场地",
+        "outdoorSuitable": false
+      }
+    }
+  },
+  "planGenerator": {
+    "description": "婚宴方案生成器配置",
+    "formFields": [
+      {
+        "name": "weddingDate",
+        "label": "婚期",
+        "type": "date",
+        "required": true,
+        "placeholder": "请选择您的婚期",
+        "validation": "必须选择未来日期"
+      },
+      {
+        "name": "tableCount",
+        "label": "婚宴桌数",
+        "type": "number",
+        "required": true,
+        "placeholder": "请输入预计桌数",
+        "min": 5,
+        "max": 50,
+        "validation": "桌数范围5-50桌"
+      },
+      {
+        "name": "budgetPerTable",
+        "label": "每桌预算",
+        "type": "select",
+        "required": true,
+        "options": [
+          { "value": "5000-6000", "label": "5000-6000元/桌" },
+          { "value": "6000-8000", "label": "6000-8000元/桌" },
+          { "value": "8000-10000", "label": "8000-10000元/桌" },
+          { "value": "10000+", "label": "10000元以上/桌" }
+        ]
+      },
+      {
+        "name": "weddingStyle",
+        "label": "婚礼风格",
+        "type": "select",
+        "required": false,
+        "options": [
+          { "value": "diy", "label": "创意DIY" },
+          { "value": "one-stop", "label": "一站式省心" },
+          { "value": "outdoor", "label": "户外草坪" },
+          { "value": "budget", "label": "小预算温馨" }
+        ]
+      },
+      {
+        "name": "coupleName",
+        "label": "新人姓名",
+        "type": "text",
+        "required": true,
+        "placeholder": "请输入新郎新娘姓名"
+      },
+      {
+        "name": "phone",
+        "label": "联系电话",
+        "type": "tel",
+        "required": true,
+        "placeholder": "请输入手机号码",
+        "validation": "11位手机号"
+      },
+      {
+        "name": "remarks",
+        "label": "其他需求",
+        "type": "textarea",
+        "required": false,
+        "placeholder": "请描述您的特殊需求或疑问",
+        "maxLength": 300
+      }
+    ],
+    "outputSections": [
+      {
+        "title": "推荐婚宴厅",
+        "description": "根据您的桌数和偏好智能匹配"
+      },
+      {
+        "title": "婚宴套餐方案",
+        "description": "推荐适合的菜单和价格方案"
+      },
+      {
+        "title": "场地特色介绍",
+        "description": "详细展示推荐场地的特色"
+      },
+      {
+        "title": "费用预估",
+        "description": "预估总费用明细"
+      },
+      {
+        "title": "预订建议",
+        "description": "根据婚期给出预订时间建议"
+      }
+    ]
+  },
+  "contact": {
+    "weddingConsultant": {
+      "name": "婚礼顾问",
+      "phone": "0571-56971666",
+      "mobile": "13857180469",
+      "extension": "婚宴部",
+      "workHours": "周一至周日 9:00-21:00"
+    },
+    "wechat": {
+      "account": "滨江开元名都傅佳锴",
+      "qrCode": "assets/images/wedding-consultant-qr.jpg",
+      "location": "浙江 杭州"
+    }
+  },
+  "dataStorage": {
+    "method": "supabase",
+    "tableName": "wedding_plan_inquiries",
+    "status": "已创建",
+    "supabaseConfig": {
+      "endpoint": "https://coplhkyergcwuonyfjyd.supabase.co/functions/v1/wedding-plan-inquiry",
+      "functionName": "wedding-plan-inquiry",
+      "method": "POST"
+    },
+    "fields": [
+      "id",
+      "couple_name",
+      "phone",
+      "wedding_date",
+      "table_count",
+      "budget_per_table",
+      "wedding_style",
+      "remarks",
+      "recommended_halls",
+      "status",
+      "consultant_assigned",
+      "created_at",
+      "updated_at"
+    ],
+    "rlsPolicy": "允许匿名用户提交咨询",
+    "indexes": ["phone", "wedding_date", "status"]
+  }
+}

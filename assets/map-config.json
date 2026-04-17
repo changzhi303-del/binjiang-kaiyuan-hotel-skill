@@ -1,0 +1,286 @@
+{
+  "hotelName": "杭州滨江开元名都大酒店",
+  "mapProvider": "amap",
+  "mode": "static",
+  "coordinates": {
+    "latitude": 30.1825,
+    "longitude": 120.1625,
+    "address": "浙江省杭州市滨江区火炬大道岩大房巷59号"
+  },
+  "amapConfig": {
+    "key": "",
+    "securityConfig": {
+      "securityJsCode": ""
+    },
+    "enabled": false,
+    "mapStyle": "normal",
+    "zoom": 16,
+    "marker": {
+      "title": "杭州滨江开元名都大酒店",
+      "icon": "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+      "label": {
+        "content": "杭州滨江开元名都大酒店",
+        "offset": [0, -30]
+      }
+    }
+  },
+  "staticMap": {
+    "enabled": true,
+    "type": "hybrid",
+    "options": [
+      {
+        "name": "高德地图网页版",
+        "url": "https://uri.amap.com/marker?position=120.1625,30.1825&name=杭州滨江开元名都大酒店&src=酒店官网&coordinate=gaode&callnative=1",
+        "description": "点击打开高德地图查看位置"
+      },
+      {
+        "name": "腾讯地图",
+        "url": "https://apis.map.qq.com/uri/v1/marker?marker=coord:30.1825,120.1625;title:杭州滨江开元名都大酒店;addr:浙江省杭州市滨江区火炬大道岩大房巷59号&referer=酒店官网",
+        "description": "点击打开腾讯地图查看位置"
+      },
+      {
+        "name": "百度地图",
+        "url": "https://api.map.baidu.com/marker?location=30.1825,120.1625&title=杭州滨江开元名都大酒店&content=浙江省杭州市滨江区火炬大道岩大房巷59号&output=html&src=酒店官网",
+        "description": "点击打开百度地图查看位置"
+      }
+    ],
+    "embedMap": {
+      "enabled": true,
+      "iframe": "https://uri.amap.com/marker?position=120.1625,30.1825&name=杭州滨江开元名都大酒店&src=酒店官网&coordinate=gaode&callnative=0"
+    }
+  },
+  "navigation": {
+    "enabled": true,
+    "methods": [
+      {
+        "name": "驾车",
+        "icon": "car",
+        "url": "https://uri.amap.com/navigation?to=120.1625,30.1825,杭州滨江开元名都大酒店&mode=car&policy=1",
+        "description": "使用高德地图导航（无需API Key）"
+      },
+      {
+        "name": "公交",
+        "icon": "bus",
+        "url": "https://uri.amap.com/navigation?to=120.1625,30.1825,杭州滨江开元名都大酒店&mode=bus&policy=1",
+        "description": "使用高德地图公交导航"
+      },
+      {
+        "name": "步行",
+        "icon": "walk",
+        "url": "https://uri.amap.com/navigation?to=120.1625,30.1825,杭州滨江开元名都大酒店&mode=walk",
+        "description": "使用高德地图步行导航"
+      },
+      {
+        "name": "骑行",
+        "icon": "bike",
+        "url": "https://uri.amap.com/navigation?to=120.1625,30.1825,杭州滨江开元名都大酒店&mode=ride",
+        "description": "使用高德地图骑行导航"
+      }
+    ]
+  },
+  "nearby": {
+    "enabled": true,
+    "categories": [
+      {
+        "name": "地铁站",
+        "keywords": "地铁站",
+        "radius": 3000,
+        "icon": "train"
+      },
+      {
+        "name": "公交站",
+        "keywords": "公交站",
+        "radius": 1000,
+        "icon": "bus"
+      },
+      {
+        "name": "停车场",
+        "keywords": "停车场",
+        "radius": 500,
+        "icon": "parking"
+      },
+      {
+        "name": "餐饮",
+        "keywords": "餐厅",
+        "radius": 1000,
+        "icon": "utensils"
+      },
+      {
+        "name": "购物",
+        "keywords": "商场",
+        "radius": 2000,
+        "icon": "shopping"
+      },
+      {
+        "name": "景点",
+        "keywords": "景点",
+        "radius": 10000,
+        "icon": "landmark"
+      }
+    ],
+    "pois": [
+      {
+        "name": "浦沿地铁站",
+        "type": "地铁站",
+        "distance": "约2千米",
+        "icon": "train"
+      },
+      {
+        "name": "诚业路地铁站",
+        "type": "地铁站",
+        "distance": "约2.4千米",
+        "icon": "train"
+      },
+      {
+        "name": "伟业路地铁站",
+        "type": "地铁站",
+        "distance": "约1.5千米",
+        "icon": "train"
+      },
+      {
+        "name": "滨江宝龙城",
+        "type": "商场",
+        "distance": "约2公里",
+        "icon": "shopping"
+      },
+      {
+        "name": "滨江天街",
+        "type": "商场",
+        "distance": "约2公里",
+        "icon": "shopping"
+      },
+      {
+        "name": "西湖",
+        "type": "景点",
+        "distance": "约15分钟车程",
+        "icon": "landmark"
+      },
+      {
+        "name": "湘湖",
+        "type": "景点",
+        "distance": "约15分钟车程",
+        "icon": "landmark"
+      }
+    ]
+  },
+  "transport": {
+    "fromAirport": {
+      "name": "杭州萧山国际机场",
+      "distance": "约29.3千米",
+      "duration": "约40分钟",
+      "route": "机场高速→彩虹快速路→火炬大道",
+      "taxi": "约80-100元"
+    },
+    "fromRailway": {
+      "name": "杭州站（城站）",
+      "distance": "约11.3千米",
+      "duration": "约30分钟",
+      "route": "西湖大道→中河高架→彩虹快速路→火炬大道",
+      "taxi": "约35-45元"
+    },
+    "fromEastStation": {
+      "name": "杭州东站",
+      "distance": "约18千米",
+      "duration": "约35分钟",
+      "route": "东宁路→德胜快速路→中河高架→彩虹快速路→火炬大道",
+      "taxi": "约50-60元"
+    },
+    "metro": {
+      "lines": [
+        {
+          "line": "地铁4号线",
+          "station": "浦沿站",
+          "exit": "B出口",
+          "walk": "约2千米",
+          "note": "可换乘公交或打车"
+        },
+        {
+          "line": "地铁6号线",
+          "station": "伟业路站",
+          "exit": "A出口",
+          "walk": "约1.5千米",
+          "note": "可换乘公交或打车"
+        }
+      ]
+    },
+    "bus": {
+      "routes": [
+        {
+          "number": "113路",
+          "station": "火炬大道东冠路口",
+          "walk": "约200米"
+        },
+        {
+          "number": "326路",
+          "station": "火炬大道东冠路口",
+          "walk": "约200米"
+        }
+      ]
+    }
+  },
+  "parking": {
+    "hotelParking": {
+      "available": true,
+      "count": 600,
+      "free": true,
+      "evCharging": true,
+      "note": "住客免费停车，报车牌号可自由进出"
+    }
+  },
+  "features": {
+    "mapView": {
+      "enabled": true,
+      "defaultType": "2d",
+      "types": ["2d", "3d", "satellite"]
+    },
+    "routePlanning": {
+      "enabled": true,
+      "supportMultiStop": false
+    },
+    "locationShare": {
+      "enabled": true,
+      "platforms": ["wechat", "weibo", "qq", "copy"]
+    },
+    "nearbySearch": {
+      "enabled": true,
+      "defaultRadius": 2000
+    }
+  },
+  "ui": {
+    "theme": {
+      "primaryColor": "#1a365d",
+      "accentColor": "#c9a227",
+      "mapHeight": "400px"
+    },
+    "controls": {
+      "zoom": true,
+      "scale": true,
+      "toolBar": true,
+      "overView": false,
+      "geolocation": true
+    }
+  },
+  "enableApi": {
+    "description": "如需启用高德地图JS API（显示交互式地图），请配置以下信息",
+    "steps": [
+      "前往 https://lbs.amap.com/ 申请 Web端(JS API) Key",
+      "将Key填入 amapConfig.key",
+      "将 amapConfig.enabled 设为 true",
+      "将 mode 设为 \"api\""
+    ],
+    "note": "不启用API时，使用静态地图链接和跳转导航，无需Key即可使用"
+  },
+  "notes": {
+    "status": "静态模式（无需API Key）",
+    "keyConfigured": false,
+    "securityNote": "API Key已移除，使用静态地图服务，无泄露风险",
+    "instructions": [
+      "当前使用静态地图模式，无需高德API Key",
+      "用户点击地图链接将跳转到高德地图网页版",
+      "导航功能通过高德URI协议实现，无需Key",
+      "如需启用交互式地图，请按 enableApi 步骤配置",
+      "建议生产环境使用静态模式，更安全可靠"
+    ],
+    "coordinateTool": "https://lbs.amap.com/console/show/picker"
+  }
+}
