@@ -78,6 +78,20 @@ git clone https://github.com/changzhi303-del/binjiang-kaiyuan-hotel-skill.git \
 我对上次入住有个反馈想提交给酒店
 ```
 
+## 数据说明与更新
+
+本 Skill 收录的信息（房型规格、场地容量、套餐价格、联系方式等）为**静态数据**，不与酒店系统实时同步，需人工维护更新。具体价格与政策以酒店官方最新公告为准，建议在正式预订前与顾问确认。
+
+**以下情况酒店方将同步更新 Skill：**
+- 婚宴套餐价格调整（旺淡季/年度）
+- 场地费用及限时优惠变动
+- 婚礼秀场次信息
+- 联系人及联系方式变更
+
+如发现信息有误，欢迎提交 [Issue](https://github.com/changzhi303-del/binjiang-kaiyuan-hotel-skill/issues) 告知我们。
+
+---
+
 ## 联系我们
 
 - **电话**：0571-56971666（24小时）
