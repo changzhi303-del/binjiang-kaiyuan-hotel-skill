@@ -5,6 +5,15 @@ const corsHeaders = {
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
 }
 
+async function sendNotification(title: string, desp: string) {
+  const key = Deno.env.get('SERVERCHAN_SENDKEY')!
+  fetch(`https://sctapi.ftqq.com/${key}.send`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: `title=${encodeURIComponent(title)}&desp=${encodeURIComponent(desp)}`,
+  }).catch(() => {})
+}
+
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') {
     return new Response('ok', { headers: corsHeaders })
@@ -59,6 +68,19 @@ Deno.serve(async (req) => {
         { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
       )
     }
+
+    sendNotification(
+      '💒 新婚宴咨询询单',
+      [
+        `新人：${couple_name}`,
+        `电话：${phone}`,
+        wedding_date      ? `婚期：${wedding_date}`              : null,
+        table_count       ? `桌数：${table_count}桌`             : null,
+        budget_per_table  ? `预算：${budget_per_table}元/桌`     : null,
+        wedding_style     ? `风格：${wedding_style}`             : null,
+        remarks           ? `备注：${remarks}`                   : null,
+      ].filter(Boolean).join('\n')
+    )
 
     return new Response(
       JSON.stringify({
